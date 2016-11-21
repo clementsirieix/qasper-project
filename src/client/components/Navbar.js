@@ -1,12 +1,13 @@
 // @flow
 import React from 'react';
+import { Link } from 'react-router';
 
 const Navbar = ({}: {}) => (
     <header>
-        <div className="logo">
+        <Link to='/' className="logo">
             Qasper
-        </div>
-        <div className="Login">
+        </Link>
+        <div className="login">
             login
         </div>
     </header>

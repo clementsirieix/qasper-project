@@ -1,0 +1,27 @@
+header
+    background: $primary
+    line-height: 3.125rem
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5), 0 2px 4px 4px rgba(0,0,0,.1)
+    >*
+        display: block
+        margin: 0 6.25rem
+        &::before
+            content: ''
+            position: absolute
+            top: .375rem
+            width: 2rem
+            height: 2.375rem
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: center
+    .logo
+        float: left
+        &::before
+            left: -2.75rem
+            background-image: url('../public/logo-small.png')
+    .login
+        float: right
+        cursor: pointer
+        &::before
+            right: -2.75rem
+            background-image: url('../public/user-icon.png')

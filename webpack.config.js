@@ -35,6 +35,10 @@ module.exports = {
             {
                 test: /\.sass$/,
                 loader: ExtractTextPlugin.extract('css!sass')
+            },
+            {
+                test: /\.png$/,
+                loader: "url-loader?mimetype=image/png"
             }
         ]
     },
