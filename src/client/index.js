@@ -3,10 +3,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
-// import App from './layout/App';
-// import store from './store';
+import Router from './Router';
+import store from './store';
 
 ReactDOM.render(
-    <h1>Qasper</h1>,
+    <Provider store={store}>
+        <Router />
+    </Provider>,
   window.document.getElementById('app')
 );
